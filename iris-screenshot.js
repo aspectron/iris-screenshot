@@ -26,15 +26,12 @@ function capture(options, callback) {
 		relaunch: false,
 		args:args,
 		onExit:()=>{
-			if(fs.existSync(filePath)){
+			if(fs.existsSync(filePath)){
 				var content = fs.readFileSync(filePath);
+				if(options.autoDelete)
+					fs.unlinkSync(filePath)
 			}else{
 				var content = null;
-			}
-
-			if(options.autoDelete){
-				if(fs.existSync(filePath))
-					fs.unlinkSync(filePath)
 			}
 
 			callback(null, {content})
