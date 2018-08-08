@@ -26,10 +26,11 @@ function capture(options, callback) {
 		relaunch: false,
 		args:args,
 		onExit:()=>{
-			if(fs.existSync(filePath))
+			if(fs.existSync(filePath)){
 				var content = fs.readFileSync(filePath);
-			else
+			}else{
 				var content = null;
+			}
 
 			if(options.autoDelete){
 				if(fs.existSync(filePath))
