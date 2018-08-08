@@ -1,0 +1,32 @@
+{
+  "name": "iris-screenshot",
+  "description": "Iris Screenshot",
+  "main": "iris-screenshot",
+  "author": {
+    "name": "ASPECTRON Inc.",
+    "email": "info@aspectron.com",
+    "url": "http://aspectron.com"
+  },
+  "bugs": {
+    "url": "https://github.com/aspectron/iris-screenshot/issues"
+  },
+  "dependencies": {
+  },
+  
+  "engines": {
+    "node": "*",
+    "npm": "*"
+  },
+  "files": [
+    "iris-screenshot.js",
+    "images",
+    "bin",
+    "lib",
+    "LICENSE",
+    "README.md"
+  ],
+  "homepage": "https://github.com/aspectron/micro-fabric",
+  "license": "Apache-2.0",
+  "private": false,
+  "version": "0.0.3"
+}
