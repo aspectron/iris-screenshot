@@ -3,6 +3,7 @@ var path 		= require("path")
 var Process 	= require("./lib/process")
 var imagesDir 	= path.join(__dirname, "images");
 var BIN 		= path.join(__dirname, "bin"); 
+var fs 			= require("fs");
 
 var commandArgs = ["screencapture", "-x"];
 switch(os.platform()){
